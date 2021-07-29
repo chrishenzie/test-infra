@@ -12,9 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# NOTE: CHANGE THIS LINE TO FORCE A NEW IMAGE: 20200109
+# NOTE: CHANGE THIS LINE TO FORCE A NEW IMAGE: 20210729
 # Includes go and gcloud
-FROM golang:1.13
+FROM golang:1.16
 
 # add env we can debug with the image name:tag
 ARG IMAGE_ARG
