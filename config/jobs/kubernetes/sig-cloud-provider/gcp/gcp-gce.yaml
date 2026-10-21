@@ -69,8 +69,8 @@ periodics:
     containers:
     - args:
       - --check-leaked-resources
-      - --env=KUBE_UBUNTU_INSTALL_CONTAINERD_VERSION=v2.1.0
-      - --env=KUBE_UBUNTU_INSTALL_RUNC_VERSION=v1.3.0
+      - --env=KUBE_UBUNTU_INSTALL_CONTAINERD_VERSION=v2.3.7
+      - --env=KUBE_UBUNTU_INSTALL_RUNC_VERSION=v1.4.3
       - --env=LOG_DUMP_SYSTEMD_SERVICES=containerd
       - --env=CONTAINER_RUNTIME_TEST_HANDLER=true
       - --env=KUBE_MASTER_OS_DISTRIBUTION=ubuntu
@@ -120,8 +120,8 @@ periodics:
     containers:
     - args:
       - --check-leaked-resources
-      - --env=KUBE_COS_INSTALL_CONTAINERD_VERSION=v2.1.5
-      - --env=KUBE_COS_INSTALL_RUNC_VERSION=v1.3.4
+      - --env=KUBE_COS_INSTALL_CONTAINERD_VERSION=v2.3.7
+      - --env=KUBE_COS_INSTALL_RUNC_VERSION=v1.4.3
       - --env=KUBE_FEATURE_GATES=AllAlpha=true,AllBeta=true,EventedPLEG=false
       - --env=ENABLE_CACHE_MUTATION_DETECTOR=true
       - --env=ENABLE_POD_PRIORITY=true
@@ -661,8 +661,8 @@ presubmits:
       containers:
       - args:
         - --build=quick
-        - --env=KUBE_UBUNTU_INSTALL_CONTAINERD_VERSION=v2.1.0
-        - --env=KUBE_UBUNTU_INSTALL_RUNC_VERSION=v1.3.0
+        - --env=KUBE_UBUNTU_INSTALL_CONTAINERD_VERSION=v2.3.7
+        - --env=KUBE_UBUNTU_INSTALL_RUNC_VERSION=v1.4.3
         - --env=LOG_DUMP_SYSTEMD_SERVICES=containerd
         - --env=CONTAINER_RUNTIME_TEST_HANDLER=true
         - --env=KUBE_MASTER_OS_DISTRIBUTION=ubuntu
@@ -722,8 +722,8 @@ presubmits:
       containers:
       - args:
         - --build=quick
-        - --env=KUBE_UBUNTU_INSTALL_CONTAINERD_VERSION=v2.1.0
-        - --env=KUBE_UBUNTU_INSTALL_RUNC_VERSION=v1.3.0
+        - --env=KUBE_UBUNTU_INSTALL_CONTAINERD_VERSION=v2.3.7
+        - --env=KUBE_UBUNTU_INSTALL_RUNC_VERSION=v1.4.3
         - --env=LOG_DUMP_SYSTEMD_SERVICES=containerd
         - --env=CONTAINER_RUNTIME_TEST_HANDLER=true
         - --env=KUBE_MASTER_OS_DISTRIBUTION=ubuntu
@@ -1021,8 +1021,8 @@ presubmits:
       containers:
       - args:
         - --build=quick
-        - --env=KUBE_UBUNTU_INSTALL_CONTAINERD_VERSION=v2.1.0
-        - --env=KUBE_UBUNTU_INSTALL_RUNC_VERSION=v1.3.0
+        - --env=KUBE_UBUNTU_INSTALL_CONTAINERD_VERSION=v2.3.7
+        - --env=KUBE_UBUNTU_INSTALL_RUNC_VERSION=v1.4.3
         - --env=LOG_DUMP_SYSTEMD_SERVICES=containerd
         - --env=CONTAINER_RUNTIME_TEST_HANDLER=true
         - --env=KUBE_MASTER_OS_DISTRIBUTION=ubuntu
@@ -1247,8 +1247,8 @@ presubmits:
       - args:
         - --build=quick
         - --check-leaked-resources
-        - --env=KUBE_COS_INSTALL_CONTAINERD_VERSION=v2.1.5
-        - --env=KUBE_COS_INSTALL_RUNC_VERSION=v1.3.4
+        - --env=KUBE_COS_INSTALL_CONTAINERD_VERSION=v2.3.7
+        - --env=KUBE_COS_INSTALL_RUNC_VERSION=v1.4.3
         - --env=KUBE_FEATURE_GATES=AllAlpha=true,AllBeta=true,EventedPLEG=false
         - --env=ENABLE_CACHE_MUTATION_DETECTOR=true
         - --env=ENABLE_POD_PRIORITY=true
