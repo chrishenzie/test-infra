@@ -3291,6 +3291,9 @@ presubmits:
             cpu: "2"
             memory: 6Gi
   - always_run: false
+    annotations:
+      testgrid-alert-email: eduard.bartosh@intel.com, patrick.ohly@intel.com
+      testgrid-dashboards: sig-node-dynamic-resource-allocation, sig-node-containerd
     branches:
     - release-1.37
     cluster: k8s-infra-prow-build
@@ -3342,6 +3345,9 @@ presubmits:
             cpu: "2"
             memory: 6Gi
   - always_run: false
+    annotations:
+      testgrid-alert-email: eduard.bartosh@intel.com, patrick.ohly@intel.com
+      testgrid-dashboards: sig-node-dynamic-resource-allocation, sig-node-containerd
     branches:
     - release-1.37
     cluster: k8s-infra-prow-build
@@ -3392,6 +3398,9 @@ presubmits:
             cpu: "2"
             memory: 6Gi
   - always_run: false
+    annotations:
+      testgrid-alert-email: eduard.bartosh@intel.com, patrick.ohly@intel.com
+      testgrid-dashboards: sig-node-dynamic-resource-allocation, sig-node-containerd
     branches:
     - release-1.37
     cluster: k8s-infra-prow-build
@@ -3443,6 +3452,9 @@ presubmits:
             cpu: "2"
             memory: 6Gi
   - always_run: false
+    annotations:
+      testgrid-alert-email: eduard.bartosh@intel.com, patrick.ohly@intel.com
+      testgrid-dashboards: sig-node-dynamic-resource-allocation, sig-node-containerd
     branches:
     - release-1.37
     cluster: k8s-infra-prow-build
