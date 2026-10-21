@@ -786,7 +786,7 @@ periodics:
     org: kubernetes
     path_alias: k8s.io/test-infra
     repo: test-infra
-  - base_ref: release/2.1
+  - base_ref: release/2.3
     org: containerd
     repo: containerd
   interval: 24h
@@ -808,7 +808,7 @@ periodics:
       - --timeout=60m
       - --skip-regex=
       - '--test-args=--container-runtime-endpoint=unix:///var/run/containerd/containerd.sock --container-runtime-process-name=/usr/local/bin/containerd --container-runtime-pid-file= --kubelet-flags="--cgroups-per-qos=true --cgroup-root=/ --runtime-cgroups=/system.slice/containerd.service --kubelet-cgroups=/system.slice/kubelet.service" --extra-log="{\"name\": \"containerd.log\", \"journalctl\": [\"-u\", \"containerd\"]}"'
-      - --image-config-file=/home/prow/go/src/k8s.io/test-infra/jobs/e2e_node/containerd/containerd-release-2.1/image-config.yaml
+      - --image-config-file=/home/prow/go/src/k8s.io/test-infra/jobs/e2e_node/containerd/containerd-release-2.3/image-config.yaml
       command:
       - runner.sh
       image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20261012-c0cc6281b1-1.36
@@ -2019,8 +2019,8 @@ presubmits:
       containers:
       - args:
         - --build=quick
-        - --env=KUBE_UBUNTU_INSTALL_CONTAINERD_VERSION=v2.1.0
-        - --env=KUBE_UBUNTU_INSTALL_RUNC_VERSION=v1.3.0
+        - --env=KUBE_UBUNTU_INSTALL_CONTAINERD_VERSION=v2.3.7
+        - --env=KUBE_UBUNTU_INSTALL_RUNC_VERSION=v1.4.3
         - --env=LOG_DUMP_SYSTEMD_SERVICES=containerd
         - --env=CONTAINER_RUNTIME_TEST_HANDLER=true
         - --env=KUBE_MASTER_OS_DISTRIBUTION=ubuntu
@@ -2131,8 +2131,8 @@ presubmits:
       containers:
       - args:
         - --build=quick
-        - --env=KUBE_UBUNTU_INSTALL_CONTAINERD_VERSION=v2.1.0
-        - --env=KUBE_UBUNTU_INSTALL_RUNC_VERSION=v1.3.0
+        - --env=KUBE_UBUNTU_INSTALL_CONTAINERD_VERSION=v2.3.7
+        - --env=KUBE_UBUNTU_INSTALL_RUNC_VERSION=v1.4.3
         - --env=LOG_DUMP_SYSTEMD_SERVICES=containerd
         - --env=CONTAINER_RUNTIME_TEST_HANDLER=true
         - --env=KUBE_MASTER_OS_DISTRIBUTION=ubuntu
@@ -3078,7 +3078,7 @@ presubmits:
       org: kubernetes
       path_alias: k8s.io/test-infra
       repo: test-infra
-    - base_ref: release/2.1
+    - base_ref: release/2.3
       org: containerd
       repo: containerd
     labels:
@@ -3102,7 +3102,7 @@ presubmits:
         - --timeout=60m
         - --skip-regex=
         - '--test-args=--container-runtime-endpoint=unix:///var/run/containerd/containerd.sock --container-runtime-process-name=/usr/local/bin/containerd --container-runtime-pid-file= --kubelet-flags="--cgroups-per-qos=true --cgroup-root=/ --runtime-cgroups=/system.slice/containerd.service --kubelet-cgroups=/system.slice/kubelet.service" --extra-log="{\"name\": \"containerd.log\", \"journalctl\": [\"-u\", \"containerd\"]}"'
-        - --image-config-file=/home/prow/go/src/k8s.io/test-infra/jobs/e2e_node/containerd/containerd-release-2.1/image-config.yaml
+        - --image-config-file=/home/prow/go/src/k8s.io/test-infra/jobs/e2e_node/containerd/containerd-release-2.3/image-config.yaml
         command:
         - runner.sh
         image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20261012-c0cc6281b1-1.36
@@ -3130,7 +3130,7 @@ presubmits:
       org: kubernetes
       path_alias: k8s.io/test-infra
       repo: test-infra
-    - base_ref: release/2.1
+    - base_ref: release/2.3
       org: containerd
       repo: containerd
     labels:
@@ -3154,7 +3154,7 @@ presubmits:
         - --timeout=60m
         - --skip-regex=
         - '--test-args=--feature-gates=AllAlpha=true,AllBeta=true,EventedPLEG=false --service-feature-gates=AllAlpha=true,AllBeta=true,EventedPLEG=false --runtime-config=api/alpha=true,api/beta=true --container-runtime-endpoint=unix:///var/run/containerd/containerd.sock --container-runtime-process-name=/usr/local/bin/containerd --container-runtime-pid-file= --kubelet-flags="--cgroups-per-qos=true --cgroup-root=/ --runtime-cgroups=/system.slice/containerd.service --kubelet-cgroups=/system.slice/kubelet.service" --extra-log="{\"name\": \"containerd.log\", \"journalctl\": [\"-u\", \"containerd\"]}"'
-        - --image-config-file=/home/prow/go/src/k8s.io/test-infra/jobs/e2e_node/containerd/containerd-release-2.1/image-config.yaml
+        - --image-config-file=/home/prow/go/src/k8s.io/test-infra/jobs/e2e_node/containerd/containerd-release-2.3/image-config.yaml
         command:
         - runner.sh
         image: gcr.io/k8s-staging-test-infra/kubekins-e2e:v20261012-c0cc6281b1-1.36
